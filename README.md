@@ -1,3 +1,2 @@
-# Counting-Object
-# Lecturer: Vlad Mariano 
+# Counting-Object -Lecturer: Vladimir Mariano 
 # Counting Car/ Motorbike pass by
