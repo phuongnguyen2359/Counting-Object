@@ -349,6 +349,7 @@ void drawCarCount(Mat &frame2Copy) {
     char line_1[100];
     char line_2[100];
     char line_3[100];
+    char name[100];
 
     Size textSize(5, 5);
     Point textPosition_1;
@@ -365,12 +366,15 @@ void drawCarCount(Mat &frame2Copy) {
 	sprintf(line_1, "%d", carCount);
 	sprintf(line_2, "%d", truckCount);
 	sprintf(line_3, "%d", bikeCount);
+	sprintf(name, "Engineering Computing - Vladimir Mariano - HPH - Counting Vehicle");
 	putText(frame2Copy, line_1, textPosition_1, fontFace, fontScale, green,
 			fontThickness);
 	putText(frame2Copy, line_2, textPosition_2, fontFace, fontScale, green,
 			fontThickness);
 	putText(frame2Copy, line_3, textPosition_3, fontFace, fontScale, green,
 			fontThickness);
+	putText(frame2Copy, name, Point(10, 40), fontFace, fontScale, red,
+				fontThickness);
 }
 
 bool addGit(char * repo, char * sign, const char * content, int content_sz, const char * message) {
